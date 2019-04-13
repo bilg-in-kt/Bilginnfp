@@ -95,10 +95,34 @@ public class Employee {
 
     public boolean payUtilities(float amountToPay) {
         boolean isEligible = this.isEligibleForLoan(amountToPay);
+
+        if(isEligible)
+            debt += amountToPay;
+
         return isEligible;
     }
 
-    public VirtualCard createCard() {
-        return null;
+    public boolean createCard(String id, float limit) {
+        if (hasCard)
+            return false;
+
+        this.card = new VirtualCard(id, limit);
+        return true;
+    }
+
+    public boolean getHasCard() {
+        return hasCard;
+    }
+
+    public VirtualCard getCard() {
+        return card;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public String getName() {
+        return name;
     }
 }
