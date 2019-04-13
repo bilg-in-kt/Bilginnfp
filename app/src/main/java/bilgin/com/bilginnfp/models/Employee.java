@@ -23,13 +23,13 @@ import java.util.*;
 public class Employee {
     private String name;
     private String id;
-    private Company company;
+    private String company;
     private float salary;
     private float debt;
     private VirtualCard card;
     private boolean hasCard;
 
-    public Employee(String name, String id, Company company, float salary) {
+    public Employee(String name, String id, String company, float salary) {
         this.name = name;
         this.id = id;
         this.company = company;
