@@ -1,13 +1,10 @@
 package bilgin.com.bilginnfp;
 
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 
+/**
+ * Custom Scannner Activity extending from Activity to display a custom layout form scanner view.
+ */
 public class QRCodeActivity extends AppCompatActivity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_qrcode);
-    }
 }

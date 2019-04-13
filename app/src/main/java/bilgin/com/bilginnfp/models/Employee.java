@@ -110,6 +110,14 @@ public class Employee {
         return true;
     }
 
+    public boolean makePayment(float amount)  {
+        if (card == null)
+            return false;
+
+        return card.makePayment(amount);
+    }
+
+
     public boolean getHasCard() {
         return hasCard;
     }
